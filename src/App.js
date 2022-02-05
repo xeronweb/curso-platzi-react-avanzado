@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Logo } from "./components/Logo";
 import { GlobalStyles } from "./styles/GlobalStyles";
 import { Navbar } from "./components/Navbar";
 import { Route } from "./route/Route";
 
-const isAuth = false
 
 export const App = () => {
 
@@ -12,7 +11,7 @@ export const App = () => {
     <>
       <GlobalStyles />
       <Logo />
-      <Route />
+      <Route/>
       <Navbar />
     </>
   );

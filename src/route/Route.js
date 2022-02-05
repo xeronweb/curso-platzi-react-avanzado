@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Router } from '@reach/router'
 import { Home } from '../pages/Home'
 import { Detail } from '../pages/Detail'
 import { PrivateRoute } from './PrivateRoute'
+import { Context,context } from '../Context'
 
 
+export const Route = () => {
 
-export const Route = ({ isAuth }) => {
+    const { isAuth } = useContext(context)
+
+
     return (
         <>
             <Router>
